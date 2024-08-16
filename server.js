@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 8000;
 const mongoose = require('mongoose');
 
 // Connection Mongoose Db
+
 mongoose
   .connect('mongodb://localhost:27017/auth')
   .then(() => console.log('MongoDb Connected'));
