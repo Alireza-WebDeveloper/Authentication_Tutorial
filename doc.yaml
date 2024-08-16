@@ -1,0 +1,175 @@
+openapi: 3.0.0
+info:
+  title: User API
+  description: API for user registration, login, and profile retrieval
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:8000/api'
+    description: Local server
+
+paths:
+  /register:
+    post:
+      summary: Register a new user
+      description: Create a new user account
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                fullname:
+                  type: string
+                  example: 'John Doe'
+                username:
+                  type: string
+                  example: 'johndoe'
+                password:
+                  type: string
+                  example: 'password123'
+              required:
+                - fullname
+                - username
+                - password
+      responses:
+        '201':
+          description: User registered successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: 'success'
+                  data:
+                    type: object
+                    properties:
+                      user:
+                        type: object
+                        properties:
+                          _id:
+                            type: string
+                            example: '60d0fe4f5311236168a109ca'
+                          fullname:
+                            type: string
+                            example: 'John Doe'
+                          username:
+                            type: string
+                            example: 'johndoe'
+                      token:
+                        type: object
+                        properties:
+                          accessToken:
+                            type: string
+                            example: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBkMGZlNGY1MzExMjM2MTY4YTEwOWNhIiwiaWF0IjoxNjgwNzI4MjQxfQ.VA7w4kKO4iOTo6u4jlKZ6g2I0NUu3RuxdJ7ufP-lwz4'
+        '400':
+          description: Bad request
+        '409':
+          description: Conflict, user already exists
+
+  /login:
+    post:
+      summary: Login a user
+      description: Authenticate a user and return an access token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  example: 'johndoe'
+                password:
+                  type: string
+                  example: 'password123'
+              required:
+                - username
+                - password
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: 'success'
+                  data:
+                    type: object
+                    properties:
+                      user:
+                        type: object
+                        properties:
+                          _id:
+                            type: string
+                            example: '60d0fe4f5311236168a109ca'
+                          fullname:
+                            type: string
+                            example: 'John Doe'
+                          username:
+                            type: string
+                            example: 'johndoe'
+                      token:
+                        type: object
+                        properties:
+                          accessToken:
+                            type: string
+                            example: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjBkMGZlNGY1MzExMjM2MTY4YTEwOWNhIiwiaWF0IjoxNjgwNzI4MjQxfQ.VA7w4kKO4iOTo6u4jlKZ6g2I0NUu3RuxdJ7ufP-lwz4'
+        '400':
+          description: Bad request
+        '401':
+          description: Unauthorized, invalid credentials
+        '404':
+          description: User not found
+
+  /getme:
+    get:
+      summary: Get current user's profile
+      description: Retrieve the profile of the currently logged-in user
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: User profile retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: 'success'
+                  data:
+                    type: object
+                    properties:
+                      user:
+                        type: object
+                        properties:
+                          _id:
+                            type: string
+                            example: '60d0fe4f5311236168a109ca'
+                          fullname:
+                            type: string
+                            example: 'John Doe'
+                          username:
+                            type: string
+                            example: 'johndoe'
+        '401':
+          description: Unauthorized, token missing or invalid
+        '404':
+          description: User not found
+        '500':
+          description: Server error
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

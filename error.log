@@ -1,0 +1,65 @@
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"_message":"User validation failed","errors":{"lastName":{"kind":"required","message":"Please enter your last name!","name":"ValidatorError","path":"lastName","properties":{"message":"Please enter your last name!","path":"lastName","type":"required"}},"name":{"kind":"required","message":"Please enter your name!","name":"ValidatorError","path":"name","properties":{"message":"Please enter your name!","path":"name","type":"required"}},"otpCode":{"kind":"required","message":"Path `otpCode` is required.","name":"ValidatorError","path":"otpCode","properties":{"message":"Path `otpCode` is required.","path":"otpCode","type":"required","value":null},"value":null},"otpExpiry":{"kind":"required","message":"Path `otpExpiry` is required.","name":"ValidatorError","path":"otpExpiry","properties":{"message":"Path `otpExpiry` is required.","path":"otpExpiry","type":"required","value":null},"value":null},"phoneNumber":{"kind":"required","message":"Please enter your phone number!","name":"ValidatorError","path":"phoneNumber","properties":{"message":"Please enter your phone number!","path":"phoneNumber","type":"required"}}},"level":"error","message":"User validation failed: name: Please enter your name!, lastName: Please enter your last name!, phoneNumber: Please enter your phone number!, otpExpiry: Path `otpExpiry` is required., otpCode: Path `otpCode` is required.","name":"ValidationError","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","message":"Phone number is required.","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"code":"ERR_INVALID_ARG_TYPE","level":"error","service":"user-service"}
+{"level":"error","message":"please enter phone number!","service":"user-service"}
+{"level":"error","message":"please enter phone number!","service":"user-service"}
+{"level":"error","message":"please enter phone number!","service":"user-service"}
+{"level":"error","message":"please enter phone number!","service":"user-service"}
+{"level":"error","message":"please enter phone number!","service":"user-service"}
+{"level":"error","message":"please enter phone number!","service":"user-service"}
+{"level":"error","message":"please enter phoneNumber, code ,firstName,lastName","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"code":"ERR_HTTP_HEADERS_SENT","level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
+{"level":"error","service":"user-service"}
